@@ -31,7 +31,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "friend": {
+      "type": "hasMany",
+      "model": "golfer",
+      "foreignKey": ""
+    },
+    "scores": {
+      "type": "hasMany",
+      "model": "score",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

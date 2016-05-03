@@ -16,7 +16,18 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "score": {
+      "type": "belongsTo",
+      "model": "score",
+      "foreignKey": ""
+    },
+    "golfer": {
+      "type": "belongsTo",
+      "model": "golfer",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

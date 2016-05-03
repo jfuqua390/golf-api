@@ -27,7 +27,23 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "comments": {
+      "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    },
+    "golfer": {
+      "type": "belongsTo",
+      "model": "golfer",
+      "foreignKey": ""
+    },
+    "course": {
+      "type": "belongsTo",
+      "model": "course",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
