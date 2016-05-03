@@ -36,5 +36,9 @@
   "end-user": {
     "dataSource": "db",
     "public": true
+  },
+  "golfer": {
+    "dataSource": "db",
+    "public": true
   }
 }
