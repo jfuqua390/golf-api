@@ -40,5 +40,17 @@
   "golfer": {
     "dataSource": "db",
     "public": true
+  },
+  "score": {
+    "dataSource": "db",
+    "public": true
+  },
+  "course": {
+    "dataSource": "db",
+    "public": true
+  },
+  "comment": {
+    "dataSource": "db",
+    "public": true
   }
 }

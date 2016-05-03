@@ -1,0 +1,33 @@
+{
+  "name": "score",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "hole": {
+      "type": "object",
+      "required": true
+    },
+    "holes": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "total-putts": {
+      "type": "number"
+    },
+    "gir": {
+      "type": "number"
+    },
+    "fairways-hit": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
