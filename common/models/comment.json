@@ -1,0 +1,33 @@
+{
+  "name": "comment",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "score": {
+      "type": "belongsTo",
+      "model": "score",
+      "foreignKey": ""
+    },
+    "golfer": {
+      "type": "belongsTo",
+      "model": "golfer",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

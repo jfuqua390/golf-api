@@ -1,45 +1,46 @@
 {
-  "name": "golfer",
+  "name": "score",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "first-name": {
-      "type": "string",
+    "hole": {
+      "type": "object",
       "required": true
     },
-    "last-name": {
-      "type": "string",
+    "holes": {
+      "type": [
+        "object"
+      ],
       "required": true
     },
-    "username": {
-      "type": "string",
-      "required": true
+    "total-putts": {
+      "type": "number"
     },
-    "email": {
-      "type": "string",
-      "required": true
+    "gir": {
+      "type": "number"
     },
-    "password": {
-      "type": "string",
-      "required": true
-    },
-    "handicap": {
+    "fairways-hit": {
       "type": "number"
     }
   },
   "validations": [],
   "relations": {
-    "friend": {
+    "comments": {
       "type": "hasMany",
+      "model": "comment",
+      "foreignKey": ""
+    },
+    "golfer": {
+      "type": "belongsTo",
       "model": "golfer",
       "foreignKey": ""
     },
-    "scores": {
-      "type": "hasMany",
-      "model": "score",
+    "course": {
+      "type": "belongsTo",
+      "model": "course",
       "foreignKey": ""
     }
   },

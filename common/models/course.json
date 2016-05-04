@@ -1,42 +1,40 @@
 {
-  "name": "golfer",
+  "name": "course",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "first-name": {
+    "holes": {
+      "type": [
+        "object"
+      ],
+      "required": true
+    },
+    "name": {
       "type": "string",
       "required": true
     },
-    "last-name": {
-      "type": "string",
+    "rating": {
+      "type": "number",
       "required": true
     },
-    "username": {
-      "type": "string",
+    "slope": {
+      "type": "number",
       "required": true
     },
-    "email": {
-      "type": "string",
+    "geolocation": {
+      "type": "geopoint",
       "required": true
     },
-    "password": {
-      "type": "string",
+    "address": {
+      "type": "object",
       "required": true
-    },
-    "handicap": {
-      "type": "number"
     }
   },
   "validations": [],
   "relations": {
-    "friend": {
-      "type": "hasMany",
-      "model": "golfer",
-      "foreignKey": ""
-    },
     "scores": {
       "type": "hasMany",
       "model": "score",
