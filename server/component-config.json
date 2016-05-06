@@ -6,6 +6,12 @@
         "methods": [
           "login"
         ]
+      },
+      {
+        "model": "golfer",
+        "methods": [
+          "login"
+        ]
       }
     ]
   },
