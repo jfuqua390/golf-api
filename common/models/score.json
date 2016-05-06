@@ -6,10 +6,6 @@
     "validateUpsert": true
   },
   "properties": {
-    "hole": {
-      "type": "object",
-      "required": true
-    },
     "holes": {
       "type": [
         "object"
